@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaam Kaj Likho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-card">
+        <div id="authSection">
+            <h2 id="authTitle">Login</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button class="main-btn" id="mainAuthBtn">Login</button>
+            <p id="authStatus" style="display:none; text-align:center; color:blue;">Thoda ruko...</p>
+            <p style="text-align:center; margin-top:10px;">
+                <span id="toggleBtn" style="color:blue; cursor:pointer;">Sign Up Karein</span>
+            </p>
+        </div>
+
+        <div id="appContent" style="display:none;">
+            <div class="header-row">
+                <span id="userEmail">User</span>
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+            </div>
+
+            <div class="summary-cards">
+                <div class="card-mini" style="background:#e3f2fd;">
+                    <small>Total Duty</small><br><strong id="totalDutyDisplay">0h</strong>
+                </div>
+                <div class="card-mini" style="background:#fff3e0;">
+                    <small>Total OT</small><br><strong id="totalOTDisplay">0h</strong>
+                </div>
+            </div>
+            
+            <div class="form">
+                <input type="text" id="nameInput" placeholder="Worker Name">
+                <input type="date" id="dateInput">
+                <div class="row">
+                    <div class="col"><label>Duty</label><input type="number" id="hrsInput" value="8"></div>
+                    <div class="col"><label>OT</label><input type="number" id="otInput" value="0"></div>
+                </div>
+                <button id="saveBtn" class="main-btn">Kaam Save Karo</button>
+            </div>
+
+            <div class="list-container">
+                <h3>Saved Records</h3>
+                <div id="entryList">Data load ho raha hai...</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
