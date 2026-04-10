@@ -1,0 +1,12 @@
+{
+  "background_color": "rgb(178, 25, 25)",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Kaam kaj likho",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Kaam kaj",
+  "start_url": "/",
+  "theme_color": "#054de4",
+  "description": "Worker attendance aur OT ka hisaab rakhne ke liye simple app."
+}
