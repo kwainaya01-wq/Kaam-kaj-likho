@@ -8,5 +8,13 @@
   "short_name": "Kaam kaj",
   "start_url": "/",
   "theme_color": "#054de4",
-  "description": "Worker attendance aur OT ka hisaab rakhne ke liye simple app."
+  "description": "Worker attendance aur OT ka hisaab rakhne ke liye simple app.",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
