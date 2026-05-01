@@ -10,7 +10,18 @@ body { background: #f4f7f6; padding: 15px; }
 .login-theme .main-btn { background: #007bff; }
 .signup-theme .main-btn { background: #28a745; }
 
-.main-btn { width: 100%; color: white; padding: 15px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 10px; }
+.main-btn { 
+    background: #007bff;
+    width: 100%; 
+    color: white; 
+    padding: 15px; 
+    border: none; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-top: 10px; 
+}
 
 input { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
 .row { display: flex; gap: 10px; margin-bottom: 10px; }
