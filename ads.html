@@ -14,12 +14,12 @@
     <h2>Aapka PDF taiyar ho raha hai...</h2>
     <p id="timer">Kripya 10 second intezar karein.</p>
 
-    <!-- ADSTERRA NATIVE BANNER START -->
+    <!-- ADSTERRA CODE START (Ismein aapka code laga hua hai) -->
     <div class="ad-box">
         <script async="async" data-cfasync="false" src="https://pl29326737.profitablecpmratenetwork.com/aa7bbe8298d797fb3ead79711aede1d9d/invoke.js"></script>
         <div id="container-aa7bbe8298d797fb3ead79711aede1d9d"></div>
     </div>
-    <!-- ADSTERRA NATIVE BANNER END -->
+    <!-- ADSTERRA CODE END -->
 
     <button id="downloadBtn" class="btn" onclick="startDownload()">PDF Download Karein</button>
 
@@ -39,7 +39,8 @@
             const urlParams = new URLSearchParams(window.location.search);
             const fileUrl = urlParams.get('file');
             if (fileUrl) {
-                window.location.href = fileUrl;
+                // decodeURIComponent PDF link ko sahi se kholne mein madad karega
+                window.location.href = decodeURIComponent(fileUrl);
             } else {
                 alert("Download link nahi mila!");
             }
@@ -47,4 +48,3 @@
     </script>
 </body>
 </html>
-
