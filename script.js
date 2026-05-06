@@ -186,12 +186,12 @@ window.downloadPDF = (workerId, workerName) => {
             document.body.removeChild(downloadAnchor);
         }, 300);
 
-        /*alert("PDF download shuru ho gaya!");
+        /*alert("PDF download shuru ho gaya!");*/
     } catch (err) {
         console.error(err);
         alert("PDF Error: Library load nahi ho payi. Ek baar internet check karein.");
     }
-};*/
+};
 
 function loadData(uid) {
     const q = query(collection(db, "records"), where("userId", "==", uid));
