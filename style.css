@@ -36,10 +36,11 @@ input { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd;
 .logout-btn:hover { background: #c0392b; }
 
 .worker-card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 15px; margin-bottom: 10px; border-left: 8px solid #27ae60; cursor: pointer; }
-.worker-entries { display: none; background: #f9f9f9; padding: 10px; border-radius: 5px; margin-top: 10px; }
+.worker-entries { display: none; width: 100%; background: #f9f9f9; padding: 10px; border-radius: 5px; margin-top: 10px; }
 .worker-card.active .worker-entries { display: block; }
 
 .entry-row { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding: 10px 0; }
 .btn-group { display: flex; gap: 15px; }
 
 .error-msg { color: #d63031; font-size: 14px; text-align: center; margin-top: 10px; padding: 10px; background: #fab1a0; border-radius: 5px; font-weight: bold; }
+
