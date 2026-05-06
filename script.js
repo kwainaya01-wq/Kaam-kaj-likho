@@ -120,16 +120,15 @@ window.downloadPDF = (workerId, workerName) => {
     try {
           // --- VIP LOCK YAHAN START ---
     if (!window.location.href.includes("?pro_user=yes")) {
-        // alert ki jagah confirm lagayenge, jo OK aur Cancel dono dega
         let userWantsPro = confirm("Ye PDF feature sirf ₹49 wale Pro App mein available hai. Kya aap abhi Pro App download karna chahte hain?");
         
         if (userWantsPro == true) {
-            // Agar user ne 'OK' dabaya, toh Play Store jayega
             window.location.href = "https://play.google.com/store/apps/details?id=com.wahid.paidapp";
         }
-        // Agar user ne 'Cancel' dabaya, toh wo Play Store nahi jayega aur app mein hi rahega
-        return; // Lekin PDF wala aage ka code nahi chalega
-    }
+        return; // Normal user yahan se ruk jayega, aage ka PDF code nahi chalega
+    } // <--- YE WALA BRACKET AAPKE CODE MEIN MISSING HAI!
+    // --- VIP LOCK YAHAN KHATAM ---
+      
     // --- VIP LOCK YAHAN KHATAM ---
 
         const { jsPDF } = window.jspdf; 
