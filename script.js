@@ -120,7 +120,7 @@ window.downloadPDF = (workerId, workerName) => {
     try {
         if (!window.location.href.includes("?pro_user=yes")) {
             myAlert("Ye PDF feature sirf ₹49 wale Pro App mein hai. Kya aap download karna chahte hain?", true, function() {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.wahid.paidapp";
+                window.location.href = "https://play.google.com/store/apps/details?id=com.wahid.kaamkaj.pro";
             });
             return;
         }
